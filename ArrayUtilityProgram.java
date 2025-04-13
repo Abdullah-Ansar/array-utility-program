@@ -28,6 +28,7 @@ public class ArrayUtilityProgram {
             System.out.println("6. Search Element");
             System.out.println("7. Sort Array");
             System.out.println("8. Left Rotate Array");
+            System.out.println("9. Move Zeros to the End");
             System.out.println("0. Exit");
             int option = InputUtils.getValidInteger(scan, "");
             ArrayUtils.utilityArray(option, array, scan);

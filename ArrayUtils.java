@@ -142,6 +142,25 @@ public class ArrayUtils {
         ArrayUtils.printArray(array);
     }
 
+    // method to move zeros to end
+    public static void moveZerosToEnd(int[] array) {
+        System.out.println("Original Array is : ");
+        printArray(array);
+        int nonZeroIndex = 0;
+        int n = array.length;
+        for (int i = 0; i < n; i++) {
+            if (array[i] != 0) {
+                array[nonZeroIndex++] = array[i];
+            }
+        }
+        while (nonZeroIndex < n) {
+            array[nonZeroIndex++] = 0;
+        }
+        System.out.println("Array after moving Zeros to the End is : ");
+        printArray(array);
+
+    }
+
     public static void utilityArray(int option, int[] array, Scanner scan) {
 
         switch (option) {
@@ -214,6 +233,7 @@ public class ArrayUtils {
                 leftRotate(array, k);
 
             }
+            case 9 -> moveZerosToEnd(array);
 
             case 0 -> System.out.println("Exiting......");
 
