@@ -1,0 +1,31 @@
+# Java class files
+*.class
+
+# Log files
+*.log
+
+# Directory for build output
+/target/
+/build/
+
+# Maven directory
+/.mvn/
+
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/
+
+# OS-specific files
+.DS_Store        # MacOS
+Thumbs.db        # Windows
+
+# Temporary files
+*.swp
+*.tmp
